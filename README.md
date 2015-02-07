@@ -1,7 +1,7 @@
 # archive-tables
-Tool to move deleted data into a recoverable archive table. Postgres, HSTORE.
+Tool to move deleted data into a schemaless recoverable archive table. Postgres, HSTORE.
 
-The basic idea is to back every table that needs a soft delete with a seperate table for the deleted data. To get around the problem of DDL changes of old deleted data with the current model is to store the deleted data in a HSTORE column. Stored procedure to create the archive table, move data to archive table and delete original.
+The basic idea is to back every table that needs a soft delete with a seperate table for the deleted data. To get around the problem of DDL changes between old deleted data with the current model is to store the deleted data in a HSTORE column. Stored procedure to create the archive table, move data to archive table and delete original.
 
 Anatomy of archive table:
 
