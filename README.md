@@ -16,5 +16,6 @@ Thoughts:
   * Versioning needed? Most likely if we want auto-restore of some sort.
   * Deal with data types of original table.
   * Don't eff up transactions!
+  * Possible piggyback on the DELETE command? Will I regret this thought?
 
   
